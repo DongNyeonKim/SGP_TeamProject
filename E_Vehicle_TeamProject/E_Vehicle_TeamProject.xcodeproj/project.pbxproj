@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A17F8B2B2656BB64001AAA61 /* ChargingStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B2A2656BB64001AAA61 /* ChargingStationTableViewController.swift */; };
+		A17F8B372656D058001AAA61 /* ViewController_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B362656D058001AAA61 /* ViewController_2.swift */; };
 		A1E72D5626539A420034FB95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E72D5526539A420034FB95 /* AppDelegate.swift */; };
 		A1E72D5826539A420034FB95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E72D5726539A420034FB95 /* SceneDelegate.swift */; };
 		A1E72D5A26539A420034FB95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E72D5926539A420034FB95 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A17F8B2A2656BB64001AAA61 /* ChargingStationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationTableViewController.swift; sourceTree = "<group>"; };
+		A17F8B362656D058001AAA61 /* ViewController_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_2.swift; sourceTree = "<group>"; };
 		A1E72D5226539A420034FB95 /* E_Vehicle_TeamProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = E_Vehicle_TeamProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E72D5526539A420034FB95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1E72D5726539A420034FB95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,9 +64,11 @@
 				A1E72D5726539A420034FB95 /* SceneDelegate.swift */,
 				A1E72D5926539A420034FB95 /* ViewController.swift */,
 				A1E72D5B26539A420034FB95 /* Main.storyboard */,
-				A1E72D5E26539A460034FB95 /* Assets.xcassets */,
 				A1E72D6026539A460034FB95 /* LaunchScreen.storyboard */,
+				A1E72D5E26539A460034FB95 /* Assets.xcassets */,
 				A1E72D6326539A460034FB95 /* Info.plist */,
+				A17F8B2A2656BB64001AAA61 /* ChargingStationTableViewController.swift */,
+				A17F8B362656D058001AAA61 /* ViewController_2.swift */,
 			);
 			path = E_Vehicle_TeamProject;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17F8B372656D058001AAA61 /* ViewController_2.swift in Sources */,
+				A17F8B2B2656BB64001AAA61 /* ChargingStationTableViewController.swift in Sources */,
 				A1E72D5A26539A420034FB95 /* ViewController.swift in Sources */,
 				A1E72D5626539A420034FB95 /* AppDelegate.swift in Sources */,
 				A1E72D5826539A420034FB95 /* SceneDelegate.swift in Sources */,

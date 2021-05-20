@@ -11,7 +11,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="E_Vehicle_TeamProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
@@ -25,7 +24,7 @@
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="HQb-N6-zjw" kind="show" id="pOJ-4g-H6M"/>
+                                    <segue destination="0LT-9d-RjT" kind="show" id="a5Z-aJ-YfE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lna-vF-T3E">
@@ -84,8 +83,46 @@
                     </view>
                     <navigationItem key="navigationItem" id="Yih-wG-Xhq"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="79.6875"/>
+        </scene>
+        <!--충전소 검색-->
+        <scene sceneID="SLG-oi-cTI">
+            <objects>
+                <viewController id="0LT-9d-RjT" customClass="ViewController_2" customModule="E_Vehicle_TeamProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E1g-8Y-iSW">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Akd-mt-dCM">
+                                <rect key="frame" x="0.0" y="305" width="390" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="E1g-8Y-iSW" id="rSa-QB-1Jp"/>
+                                    <outlet property="delegate" destination="E1g-8Y-iSW" id="zwJ-gr-PdY"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mlb-cE-ojG">
+                                <rect key="frame" x="146" y="539" width="98" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="검색"/>
+                                <connections>
+                                    <segue destination="yq6-3G-uMZ" kind="show" identifier="segueToTableView" id="L9Z-y9-ffq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m5U-JB-NJh"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="충전소 검색" id="8Hr-DD-1uB"/>
+                    <connections>
+                        <outlet property="pickerView" destination="Akd-mt-dCM" id="FQc-j7-Sak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asB-9k-uqE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2007.6923076923076" y="79.620853080568722"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5la-OX-Bic">
@@ -105,21 +142,60 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
         </scene>
-        <!--충전소 검색-->
-        <scene sceneID="Ogo-FD-xG5">
+        <!--충전소 리스트-->
+        <scene sceneID="fmB-Cd-U5W">
             <objects>
-                <viewController title="충전소 검색" id="HQb-N6-zjw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0RF-I6-9Gu">
+                <tableViewController id="qJt-a3-2b2" customClass="ChargingStationTableViewController" customModule="E_Vehicle_TeamProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rok-ff-fJ3">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="sNc-wk-KuI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="충전소 검색" id="vkv-nQ-RZ2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PYV-ta-Laq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="RpF-Sk-OG0" detailTextLabel="Nvu-PU-HyO" style="IBUITableViewCellStyleSubtitle" id="SW2-el-v7r">
+                                <rect key="frame" x="0.0" y="28" width="390" height="55.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SW2-el-v7r" id="Nls-gU-5fM">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="55.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RpF-Sk-OG0">
+                                            <rect key="frame" x="20" y="8.9999999999999982" width="33" height="20.333333333333332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nvu-PU-HyO">
+                                            <rect key="frame" x="19.999999999999996" y="31.333333333333332" width="43.666666666666664" height="14.333333333333334"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qJt-a3-2b2" id="mRL-Np-vms"/>
+                            <outlet property="delegate" destination="qJt-a3-2b2" id="4OS-D2-dh4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="충전소 리스트" id="Puf-M6-dHL">
+                        <barButtonItem key="leftBarButtonItem" title="이전" id="Rrc-c0-n2z">
+                            <connections>
+                                <segue destination="MPC-W5-E0O" kind="unwind" unwindAction="doneToPickerViewControllerWithSegue:" id="13e-fc-KG2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tbData" destination="Rok-ff-fJ3" id="SVb-EE-EUP"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WAZ-Yd-h42" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="MPC-W5-E0O" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1946" y="80"/>
+            <point key="canvasLocation" x="4023" y="80"/>
         </scene>
         <!--충전 타이머-->
         <scene sceneID="522-U1-UVq">
@@ -170,6 +246,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDq-0F-zPh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1938" y="1526"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bEo-eZ-ZEP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yq6-3G-uMZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="yYl-WU-xSX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8yr-VE-mDK">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qJt-a3-2b2" kind="relationship" relationship="rootViewController" id="xwg-Pq-v0v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kk2-Mj-lsb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3094" y="80"/>
         </scene>
     </scenes>
     <resources>
