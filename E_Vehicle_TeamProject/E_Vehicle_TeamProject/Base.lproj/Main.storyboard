@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -174,6 +175,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="55v-e9-OKw" kind="show" identifier="segueToStationDetail" id="ebU-Vy-vqo"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -187,6 +191,11 @@
                                 <segue destination="MPC-W5-E0O" kind="unwind" unwindAction="doneToPickerViewControllerWithSegue:" id="13e-fc-KG2"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="모든 위치" id="odf-VQ-rUS">
+                            <connections>
+                                <segue destination="5h5-tF-LJx" kind="show" identifier="segueToMapView" id="Z66-IU-Y6g"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tbData" destination="Rok-ff-fJ3" id="SVb-EE-EUP"/>
@@ -196,6 +205,31 @@
                 <exit id="MPC-W5-E0O" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4023" y="80"/>
+        </scene>
+        <!--전체 충전소 위치-->
+        <scene sceneID="qUz-lW-bQW">
+            <objects>
+                <viewController id="5h5-tF-LJx" customClass="AllMapViewController" customModule="E_Vehicle_TeamProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZLi-Sl-vvU">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ktI-Cm-yw2">
+                                <rect key="frame" x="16" y="108" width="358" height="659"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vT1-m6-eMA"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="전체 충전소 위치" id="efb-9N-hor"/>
+                    <connections>
+                        <outlet property="mapView" destination="ktI-Cm-yw2" id="gPX-il-NIF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YJj-Fq-82w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4880" y="79.620853080568722"/>
         </scene>
         <!--충전 타이머-->
         <scene sceneID="522-U1-UVq">
@@ -219,6 +253,66 @@
                 <exit id="0C5-hx-Jbq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2878" y="808"/>
+        </scene>
+        <!--Detail Station View Controller-->
+        <scene sceneID="1Og-tI-TkF">
+            <objects>
+                <viewController id="55v-e9-OKw" customClass="DetailStationViewController" customModule="E_Vehicle_TeamProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="419-sz-mfz">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7Vg-9r-8ik">
+                                <rect key="frame" x="16" y="356" width="358" height="454"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StationCell" textLabel="QS7-Oc-QY4" detailTextLabel="2ha-W2-BiD" style="IBUITableViewCellStyleValue1" id="Tx9-y7-Bqq">
+                                        <rect key="frame" x="0.0" y="28" width="358" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tx9-y7-Bqq" id="VT3-SH-AIW">
+                                            <rect key="frame" x="0.0" y="0.0" width="358" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QS7-Oc-QY4">
+                                                    <rect key="frame" x="20" y="15" width="26.666666666666668" height="15.666666666666666"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2ha-W2-BiD">
+                                                    <rect key="frame" x="300.66666666666669" y="14" width="37.333333333333336" height="17"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" name="AccentColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="55v-e9-OKw" id="DsA-KW-AG5"/>
+                                    <outlet property="delegate" destination="55v-e9-OKw" id="4kl-LA-IqY"/>
+                                </connections>
+                            </tableView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WGS-41-Xz5">
+                                <rect key="frame" x="37" y="88" width="317" height="265"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rgv-fS-E7g"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="H8A-2B-Spz"/>
+                    <connections>
+                        <outlet property="detailTableView" destination="7Vg-9r-8ik" id="GGK-kf-66Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TvU-36-nRF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4021.5384615384614" y="840.28436018957348"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ToH-eI-zXL">
@@ -268,6 +362,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

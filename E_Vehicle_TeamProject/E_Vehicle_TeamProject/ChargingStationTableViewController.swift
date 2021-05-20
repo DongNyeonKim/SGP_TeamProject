@@ -26,8 +26,8 @@ class ChargingStationTableViewController: UITableViewController, XMLParserDelega
     var lat = NSMutableString()
     var lng = NSMutableString()
     
-    var hospitalname = ""
-    var hospitalname_utf8 = ""
+    var stationname = ""
+    var stationname_utf8 = ""
     
     
     func beginParsing()
@@ -121,6 +121,29 @@ class ChargingStationTableViewController: UITableViewController, XMLParserDelega
         cell.textLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "statNm") as! NSString as String
         cell.detailTextLabel?.text = (posts.object(at: indexPath.row) as AnyObject).value(forKey: "addr") as! NSString as String
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToMapView" {
+            if let mapViewController = segue.destination as? AllMapViewController {
+                mapViewController.posts = posts
+            }
+        }
+        if segue.identifier == "segueToStationDetail" {
+            if let cell = sender as? UITableViewCell {
+                let indexPath = tableView.indexPath(for: cell)
+
+                stationname = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "statNm") as! NSString as String
+
+                if let detailstationTableViewController = segue.destination as?
+                    DetailStationViewController {
+                    detailstationTableViewController.url = url
+                    detailstationTableViewController.stationName = stationname
+                }
+                
+            }
+        }
+        
     }
     
 //    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
