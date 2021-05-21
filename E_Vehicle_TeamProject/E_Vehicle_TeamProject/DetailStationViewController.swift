@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import MapKit
 
-class DetailStationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, XMLParserDelegate {
+class DetailStationViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, XMLParserDelegate, MKMapViewDelegate {
 
     @IBOutlet var detailTableView: UITableView!
     
+    @IBOutlet var mapView: MKMapView!
     
     var url : String?
     
@@ -39,6 +41,12 @@ class DetailStationViewController: UIViewController, UITableViewDataSource, UITa
     var powerType = NSMutableString()
     var parkingFree = NSMutableString()
     var note = NSMutableString()
+    
+    var lat = NSMutableString()
+    var lng = NSMutableString()
+    
+    var my_lat : String = ""
+    var my_lng : String = ""
     
     func beginParsing()
     {
@@ -94,6 +102,12 @@ class DetailStationViewController: UIViewController, UITableViewDataSource, UITa
             
             note = NSMutableString()
             note = ""
+            
+            lat = NSMutableString()
+            lat = ""
+            
+            lng = NSMutableString()
+            lng = ""
         }
     }
     
@@ -124,6 +138,10 @@ class DetailStationViewController: UIViewController, UITableViewDataSource, UITa
             parkingFree.append(string)
         } else if element.isEqual(to: "note"){
             note.append(string)
+        } else if element.isEqual(to: "lat"){
+            lat.append(string)
+        } else if element.isEqual(to: "lng"){
+            lng.append(string)
         }
         
     }
@@ -143,7 +161,38 @@ class DetailStationViewController: UIViewController, UITableViewDataSource, UITa
                     targets[2] = chgerId as String
                 }
                 if !chgerType.isEqual(nil) {
-                    targets[3] = chgerType as String
+                    if(!chgerType.isEqual("01"))
+                    {
+                        targets[3] = "DC차데모"
+                    }
+                    else if(!chgerType.isEqual("02"))
+                    {
+                        targets[3] = "AC완속"
+                    }
+                    else if(!chgerType.isEqual("03"))
+                    {
+                        targets[3] = "DC차데모+AC3상"
+                    }
+                    else if(!chgerType.isEqual("04"))
+                    {
+                        targets[3] = "DC콤보"
+                    }
+                    else if(!chgerType.isEqual("05"))
+                    {
+                        targets[3] = "DC차데모+DC콤보"
+                    }
+                    else if(!chgerType.isEqual("06"))
+                    {
+                        targets[3] = "DC차데모+AC상+DC콤보"
+                    }
+                    else if(!chgerType.isEqual("07"))
+                    {
+                        targets[3] = "AC3상"
+                    }
+                    else
+                    {
+                        targets[3] = "미확인"
+                    }
                 }
                 if !addr.isEqual(nil) {
                     targets[4] = addr as String
@@ -158,7 +207,30 @@ class DetailStationViewController: UIViewController, UITableViewDataSource, UITa
                     targets[7] = busiCall as String
                 }
                 if !stat.isEqual(nil) {
-                    targets[8] = stat as String
+                    if(!stat.isEqual("1"))
+                    {
+                        targets[8] = "통신이상"
+                    }
+                    else if(!stat.isEqual("2"))
+                    {
+                        targets[8] = "충전대기"
+                    }
+                    else if(!stat.isEqual("3"))
+                    {
+                        targets[8] = "충전중"
+                    }
+                    else if(!stat.isEqual("4"))
+                    {
+                        targets[8] = "충전중"
+                    }
+                    else if(!stat.isEqual("5"))
+                    {
+                        targets[8] = "충전중"
+                    }
+                    else
+                    {
+                        targets[8] = "상태미확인"
+                    }
                 }
                 if !statUpdDt.isEqual(nil) {
                     targets[9] = statUpdDt as String
@@ -167,21 +239,90 @@ class DetailStationViewController: UIViewController, UITableViewDataSource, UITa
                     targets[10] = powerType as String
                 }
                 if !parkingFree.isEqual(nil) {
-                    targets[11] = parkingFree as String
+                    if(!parkingFree.isEqual("Y"))
+                    {
+                        targets[11] = "무료"
+                    }
+                    else if(!parkingFree.isEqual("N"))
+                    {
+                        targets[11] = "유료"
+                    }
+                    else
+                    {
+                        targets[11] = "현장 확인"
+                    }
                 }
                 if !note.isEqual(nil) {
                     targets[12] = note as String
                 }
-                print(targets)
+                if !lat.isEqual(nil) {
+                    my_lat = lat as String
+                }
+                if !lng.isEqual(nil) {
+                    my_lng = lng as String
+                }
             }
         }
     }
     
     
+    let regionRadius: CLLocationDistance = 500
+    
+    func centerMapOnLocation(location: CLLocation) {
+        let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+        mapView.setRegion(coordinateRegion, animated: true)
+    }
+    
+    var stations : [Station] = []
+    
+    func loadInitialData() {
+
+            let statNm = targets[0]
+            let addr = targets[4]
+            let lat = (my_lat as NSString).doubleValue
+            let lon = (my_lng as NSString).doubleValue
+            let station = Station(title: statNm, locationName: addr, coordinate: CLLocationCoordinate2D(latitude: lat, longitude: lon))
+            stations.append(station)
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let location = view.annotation as! Station
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+        location.mapItem().openInMaps(launchOptions: launchOptions)
+    }
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard let annotation = annotation as? Station else {return nil}
+        
+        let identifier = "marker"
+        var view: MKMarkerAnnotationView
+        
+        if let dequeuedView = mapView.dequeueReusableAnnotationView(withIdentifier: identifier)
+            as? MKMarkerAnnotationView {
+            dequeuedView.annotation = annotation
+            view = dequeuedView
+        } else {
+            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            view.canShowCallout = true
+            view.calloutOffset = CGPoint(x: -1, y: 1)
+            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+        }
+        return view
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         beginParsing()
+        let lat = (my_lat as NSString).doubleValue
+        let lon = (my_lng as NSString).doubleValue
+        let initialLocation = CLLocation(latitude: lat, longitude: lon)
+        
+        centerMapOnLocation(location: initialLocation)
+        
+        mapView.delegate = self
+        loadInitialData()
+        mapView.addAnnotations(stations)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
