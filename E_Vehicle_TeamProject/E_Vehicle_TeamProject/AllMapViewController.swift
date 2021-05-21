@@ -62,13 +62,15 @@ class AllMapViewController: UIViewController, MKMapViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let initialLocation = CLLocation(latitude: 37.571076, longitude: 126.995880)
-        
-        centerMapOnLocation(location: initialLocation)
+
         
         mapView.delegate = self
         loadInitialData()
+        let lat = stations[0].coordinate.latitude
+        let lon = stations[0].coordinate.longitude
+        let initialLocation = CLLocation(latitude: lat, longitude: lon)
+        
+        centerMapOnLocation(location: initialLocation)
         mapView.addAnnotations(stations)
 
         // Do any additional setup after loading the view.
