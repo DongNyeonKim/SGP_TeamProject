@@ -6,14 +6,21 @@
 //
 import UIKit
 
-class ViewController_2: UIViewController,UIPickerViewDelegate, UIPickerViewDataSource {
+class ViewController_2: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
  
     @IBOutlet weak var pickerView: UIPickerView!
+    
+    @IBOutlet var textView: UITextField!
+    
     var pickerDataSource = ["서울특별시", "부산광역시", "대구광역시", "인천시", "광주시", "대전시", "울산시", "경기도", "강원도", "충청북도", "충청남도", "전라북도", "전라남도", "경상북도", "경상남도", "제주도"]
     
-    var url : String = "http://apis.data.go.kr/B552584/EvCharger/getChargerInfo?serviceKey=S8rzdkL5i25h2g%2Bk0QgRu%2B4GJ8ShKEiyJAR1xCDbaOj%2Ffh2BCT04Om0AKgQx4mSH1Cu%2BK3GOIB2GwivyW%2B1FSg%3D%3D&pageNo=1&numOfRows=100&zcode="
+    var url : String = "http://apis.data.go.kr/B552584/EvCharger/getChargerInfo?serviceKey=S8rzdkL5i25h2g%2Bk0QgRu%2B4GJ8ShKEiyJAR1xCDbaOj%2Ffh2BCT04Om0AKgQx4mSH1Cu%2BK3GOIB2GwivyW%2B1FSg%3D%3D&pageNo=1&numOfRows=200&zcode="
     var zcode : String = "11" // 서울시
+    
+    
+    var url_withAddr : String = "http://openapi.kepco.co.kr/service/EvInfoServiceV2/getEvSearchList?serviceKey=S8rzdkL5i25h2g%2Bk0QgRu%2B4GJ8ShKEiyJAR1xCDbaOj%2Ffh2BCT04Om0AKgQx4mSH1Cu%2BK3GOIB2GwivyW%2B1FSg%3D%3D&pageNo=1&numOfRows=100&addr="
+    var addr : String = "서울특별시"
     
 
 
@@ -77,6 +84,15 @@ class ViewController_2: UIViewController,UIPickerViewDelegate, UIPickerViewDataS
                 if let chargingStationTableViewController = navController.topViewController as?
                     ChargingStationTableViewController {
                     chargingStationTableViewController.url = url + zcode
+                }
+            }
+        }
+        else if segue.identifier == "segueToTableView2" {
+            let encode = textView.text!.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
+            if let navController = segue.destination as? UINavigationController {
+                if let chargingStationWithAddrTableViewController = navController.topViewController as?
+                    ChargingStationWithAddrTableViewController {
+                    chargingStationWithAddrTableViewController.url = url_withAddr + encode!
                 }
             }
         }

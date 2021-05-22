@@ -161,31 +161,31 @@ class DetailStationViewController: UIViewController, UITableViewDataSource, UITa
                     targets[2] = chgerId as String
                 }
                 if !chgerType.isEqual(nil) {
-                    if(!chgerType.isEqual("01"))
+                    if(chgerType.isEqual("01"))
                     {
                         targets[3] = "DC차데모"
                     }
-                    else if(!chgerType.isEqual("02"))
+                    else if(chgerType.isEqual("02"))
                     {
                         targets[3] = "AC완속"
                     }
-                    else if(!chgerType.isEqual("03"))
+                    else if(chgerType.isEqual("03"))
                     {
                         targets[3] = "DC차데모+AC3상"
                     }
-                    else if(!chgerType.isEqual("04"))
+                    else if(chgerType.isEqual("04"))
                     {
                         targets[3] = "DC콤보"
                     }
-                    else if(!chgerType.isEqual("05"))
+                    else if(chgerType.isEqual("05"))
                     {
                         targets[3] = "DC차데모+DC콤보"
                     }
-                    else if(!chgerType.isEqual("06"))
+                    else if(chgerType.isEqual("06"))
                     {
                         targets[3] = "DC차데모+AC상+DC콤보"
                     }
-                    else if(!chgerType.isEqual("07"))
+                    else if(chgerType.isEqual("07"))
                     {
                         targets[3] = "AC3상"
                     }
@@ -207,23 +207,24 @@ class DetailStationViewController: UIViewController, UITableViewDataSource, UITa
                     targets[7] = busiCall as String
                 }
                 if !stat.isEqual(nil) {
-                    if(!stat.isEqual("1"))
+
+                    if(stat.isEqual("1"))
                     {
                         targets[8] = "통신이상"
                     }
-                    else if(!stat.isEqual("2"))
+                    else if(stat.isEqual("2"))
                     {
                         targets[8] = "충전대기"
                     }
-                    else if(!stat.isEqual("3"))
+                    else if(stat.isEqual("3"))
                     {
                         targets[8] = "충전중"
                     }
-                    else if(!stat.isEqual("4"))
+                    else if(stat.isEqual("4"))
                     {
                         targets[8] = "충전중"
                     }
-                    else if(!stat.isEqual("5"))
+                    else if(stat.isEqual("5"))
                     {
                         targets[8] = "충전중"
                     }
@@ -239,11 +240,11 @@ class DetailStationViewController: UIViewController, UITableViewDataSource, UITa
                     targets[10] = powerType as String
                 }
                 if !parkingFree.isEqual(nil) {
-                    if(!parkingFree.isEqual("Y"))
+                    if(parkingFree.isEqual("Y"))
                     {
                         targets[11] = "무료"
                     }
-                    else if(!parkingFree.isEqual("N"))
+                    else if(parkingFree.isEqual("N"))
                     {
                         targets[11] = "유료"
                     }
