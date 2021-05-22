@@ -14,6 +14,7 @@
 		A17F8B492656EE42001AAA61 /* DetailStationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B482656EE42001AAA61 /* DetailStationViewController.swift */; };
 		A17F8B4C26583A64001AAA61 /* ChargingStationWithAddrTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B4B26583A64001AAA61 /* ChargingStationWithAddrTableViewController.swift */; };
 		A17F8B4F2658B4EA001AAA61 /* AllMapwithAddrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B4E2658B4EA001AAA61 /* AllMapwithAddrViewController.swift */; };
+		A17F8B5526595492001AAA61 /* DetailStationwithAddrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B5426595492001AAA61 /* DetailStationwithAddrViewController.swift */; };
 		A1816DF62658D68D00CABC50 /* ChargeTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1816DF52658D68D00CABC50 /* ChargeTimerViewController.swift */; };
 		A1E72D5626539A420034FB95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E72D5526539A420034FB95 /* AppDelegate.swift */; };
 		A1E72D5826539A420034FB95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E72D5726539A420034FB95 /* SceneDelegate.swift */; };
@@ -31,6 +32,7 @@
 		A17F8B482656EE42001AAA61 /* DetailStationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStationViewController.swift; sourceTree = "<group>"; };
 		A17F8B4B26583A64001AAA61 /* ChargingStationWithAddrTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationWithAddrTableViewController.swift; sourceTree = "<group>"; };
 		A17F8B4E2658B4EA001AAA61 /* AllMapwithAddrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMapwithAddrViewController.swift; sourceTree = "<group>"; };
+		A17F8B5426595492001AAA61 /* DetailStationwithAddrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStationwithAddrViewController.swift; sourceTree = "<group>"; };
 		A1816DF52658D68D00CABC50 /* ChargeTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeTimerViewController.swift; sourceTree = "<group>"; };
 		A1E72D5226539A420034FB95 /* E_Vehicle_TeamProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = E_Vehicle_TeamProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E72D5526539A420034FB95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				A17F8B4B26583A64001AAA61 /* ChargingStationWithAddrTableViewController.swift */,
 				A17F8B4E2658B4EA001AAA61 /* AllMapwithAddrViewController.swift */,
 				A1816DF52658D68D00CABC50 /* ChargeTimerViewController.swift */,
+				A17F8B5426595492001AAA61 /* DetailStationwithAddrViewController.swift */,
 			);
 			path = E_Vehicle_TeamProject;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				A1E72D5626539A420034FB95 /* AppDelegate.swift in Sources */,
 				A1E72D5826539A420034FB95 /* SceneDelegate.swift in Sources */,
 				A17F8B3E2656E441001AAA61 /* Station.swift in Sources */,
+				A17F8B5526595492001AAA61 /* DetailStationwithAddrViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

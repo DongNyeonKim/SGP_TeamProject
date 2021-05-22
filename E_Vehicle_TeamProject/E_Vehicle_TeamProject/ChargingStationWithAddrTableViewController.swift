@@ -132,16 +132,16 @@ class ChargingStationWithAddrTableViewController: UITableViewController, XMLPars
                 mapViewController.posts = posts
             }
         }
-        if segue.identifier == "segueToStationDetail" {
+        if segue.identifier == "segueToStationwithAddrDetail" {
             if let cell = sender as? UITableViewCell {
                 let indexPath = tableView.indexPath(for: cell)
 
-                stationname = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "statNm") as! NSString as String
+                stationname = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "csNm") as! NSString as String
 
-                if let detailstationTableViewController = segue.destination as?
-                    DetailStationViewController {
-                    detailstationTableViewController.url = url
-                    detailstationTableViewController.stationName = stationname
+                if let detailstationwithAddrTableViewController = segue.destination as?
+                    DetailStationwithAddrViewController {
+                    detailstationwithAddrTableViewController.url = url
+                    detailstationwithAddrTableViewController.stationName = stationname
                 }
                 
             }
