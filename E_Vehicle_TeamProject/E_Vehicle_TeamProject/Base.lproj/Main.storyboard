@@ -324,54 +324,59 @@
         <!--아파트 충전기 요금-->
         <scene sceneID="FK3-tb-HbG">
             <objects>
-                <viewController id="srl-9O-6UV" customClass="APTChargeFeeTableViewController" customModule="E_Vehicle_TeamProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="srl-9O-6UV" customClass="AptChargeFeeViewController" customModule="E_Vehicle_TeamProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OqN-Oo-JJW">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ylg-Lg-82d">
-                                <rect key="frame" x="47" y="138" width="296" height="32"/>
+                                <rect key="frame" x="47" y="176" width="296" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title=" 봄가을철"/>
                                     <segment title="여름철(6~8월)"/>
                                     <segment title="겨울철(11~2월)"/>
                                 </segments>
+                                <connections>
+                                    <action selector="didchangeSegment:" destination="srl-9O-6UV" eventType="valueChanged" id="Nqd-ap-ki7"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JVq-Eo-hPG">
-                                <rect key="frame" x="16" y="206" width="358" height="483"/>
+                                <rect key="frame" x="16" y="241" width="358" height="440"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AptChargeFeeCell" rowHeight="90" id="8RM-W7-R0l" customClass="AptChargeFeeCellTableViewCell" customModule="E_Vehicle_TeamProject" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="358" height="90"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" showsReorderControl="YES" indentationWidth="10" reuseIdentifier="AptChargeFeeCell" rowHeight="140" id="8RM-W7-R0l" customClass="AptChargeFeeCellTableViewCell" customModule="E_Vehicle_TeamProject" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="358" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8RM-W7-R0l" id="7he-fD-Z1h">
-                                            <rect key="frame" x="0.0" y="0.0" width="358" height="90"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="358" height="140"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roF-c2-x9p">
-                                                    <rect key="frame" x="16" y="14" width="150" height="30"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DetailTime" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tw0-Wp-SGB">
-                                                    <rect key="frame" x="16" y="47" width="150" height="30"/>
+                                                    <rect key="frame" x="16" y="83" width="214" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fee" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77U-EL-d50">
-                                                    <rect key="frame" x="243" y="30" width="100" height="30"/>
+                                                    <rect key="frame" x="238" y="55" width="100" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" red="0.074943443027689197" green="0.45170459550680575" blue="0.0" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="roF-c2-x9p">
+                                                    <rect key="frame" x="48" y="30" width="150" height="30"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <color key="shadowColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </label>
                                             </subviews>
+                                            <color key="backgroundColor" systemColor="systemTealColor"/>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="DetailTimeLabel" destination="tw0-Wp-SGB" id="HDU-1o-HR2"/>
@@ -380,15 +385,33 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="OqN-Oo-JJW" id="0TB-lQ-Ctz"/>
+                                    <outlet property="delegate" destination="OqN-Oo-JJW" id="ZgM-t5-DFn"/>
+                                </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="※ 공휴일(일요일 포함)은 전체 시간 경부하 적용" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3e-6T-DVJ">
+                                <rect key="frame" x="16" y="689" width="278" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="※ 토요일은 최대부하만 중간부하로 하향 적용" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uB-5j-IbJ">
+                                <rect key="frame" x="16" y="705" width="263" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qsj-oK-kBx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="아파트 충전기 요금" id="6c3-eW-sRk"/>
                     <connections>
-                        <outlet property="tableView" destination="JVq-Eo-hPG" id="7Qe-3y-Mbp"/>
-                        <outlet property="tableView1" destination="JVq-Eo-hPG" id="nOb-h7-Lf8"/>
+                        <outlet property="segmentControl" destination="Ylg-Lg-82d" id="cB4-rq-ece"/>
+                        <outlet property="tbData" destination="JVq-Eo-hPG" id="Lod-rM-iDz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ldw-9L-wVP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -904,6 +927,9 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
