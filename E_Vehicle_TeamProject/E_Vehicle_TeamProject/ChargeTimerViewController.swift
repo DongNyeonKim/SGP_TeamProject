@@ -53,9 +53,6 @@ class ChargeTimerViewController: UIViewController {
                 return dateFormatter
             }()
 
-            print(date1)
-            print(dateFormatter.string(from: date1!))
-
             predictingTime.text = "예상 충전 완료 시간\n\(dateFormatter.string(from: date1!))"
         }
         else {
@@ -101,6 +98,12 @@ class ChargeTimerViewController: UIViewController {
         else {
             timer.invalidate()
             timerLabel.text = "충전완료\n00:00:0"
+            
+            let alertController = UIAlertController(title: "알림", message: "충전이 완료되었습니다!", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "확인", style: .default, handler: nil)
+            alertController.addAction(defaultAction)
+                    
+            present(alertController, animated: true, completion: nil)
         }
     }
     
