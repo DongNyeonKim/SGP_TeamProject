@@ -32,6 +32,9 @@
                                 <state key="normal" title=" 전기차 소개">
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sh7-UO-wnz" kind="show" id="oPn-rD-ehB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wDd-oI-svb">
                                 <rect key="frame" x="208" y="620" width="150" height="150"/>
@@ -1079,15 +1082,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="초소형" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mew-He-TOa">
-                                <rect key="frame" x="301" y="167" width="58" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="시도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuC-B8-Le2">
+                                <rect key="frame" x="29" y="168" width="39" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="시도" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DuC-B8-Le2">
-                                <rect key="frame" x="29" y="168" width="39" height="27"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="초소형" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mew-He-TOa">
+                                <rect key="frame" x="302" y="168" width="58" height="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <nil key="textColor"/>
@@ -1162,6 +1165,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aNl-5J-2ti" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3390.7692307692305" y="3831.7535545023693"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="PPw-T6-Thm">
+            <objects>
+                <viewController id="nqc-st-RnM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3PK-g8-0Da">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PCH-Vb-ceo"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="qo8-13-wsD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xH3-Qk-LEi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3311" y="5453"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="yEq-88-77x">
+            <objects>
+                <viewController id="8ol-OB-Nfm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zAd-NA-hkF">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TOa-4t-pSS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Ioc-L1-JRg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQb-my-Ngw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3311" y="4727"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="waK-8p-Rmj">
+            <objects>
+                <tabBarController id="sh7-UO-wnz" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cbv-Wv-2pE"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iID-vX-OTJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8ol-OB-Nfm" kind="relationship" relationship="viewControllers" id="Wrs-v7-fOU"/>
+                        <segue destination="nqc-st-RnM" kind="relationship" relationship="viewControllers" id="xpE-lh-DhA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8vP-uL-I2j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1911" y="4727"/>
         </scene>
     </scenes>
     <resources>

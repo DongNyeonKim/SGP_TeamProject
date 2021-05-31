@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CC82E6F64F6CB33FAE6D6C0 /* Pods_E_Vehicle_TeamProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA66F5B87D4211D3CB799753 /* Pods_E_Vehicle_TeamProject.framework */; };
 		A17F8B2B2656BB64001AAA61 /* ChargingStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B2A2656BB64001AAA61 /* ChargingStationTableViewController.swift */; };
 		A17F8B372656D058001AAA61 /* ViewController_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B362656D058001AAA61 /* ViewController_2.swift */; };
 		A17F8B3B2656E17D001AAA61 /* AllMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B3A2656E17D001AAA61 /* AllMapViewController.swift */; };
@@ -21,6 +22,7 @@
 		A17F8B65265ADF48001AAA61 /* SidoSubsidyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B64265ADF48001AAA61 /* SidoSubsidyTableViewCell.swift */; };
 		A17F8B68265AE65F001AAA61 /* CarSubsidyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B67265AE65F001AAA61 /* CarSubsidyViewController.swift */; };
 		A1816DF62658D68D00CABC50 /* ChargeTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1816DF52658D68D00CABC50 /* ChargeTimerViewController.swift */; };
+		A1DA85F52664A7AD0072C448 /* ECarSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DA85F42664A7AC0072C448 /* ECarSearchViewController.swift */; };
 		A1E72D5626539A420034FB95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E72D5526539A420034FB95 /* AppDelegate.swift */; };
 		A1E72D5826539A420034FB95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E72D5726539A420034FB95 /* SceneDelegate.swift */; };
 		A1E72D5A26539A420034FB95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E72D5926539A420034FB95 /* ViewController.swift */; };
@@ -44,6 +46,7 @@
 		A17F8B64265ADF48001AAA61 /* SidoSubsidyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidoSubsidyTableViewCell.swift; sourceTree = "<group>"; };
 		A17F8B67265AE65F001AAA61 /* CarSubsidyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSubsidyViewController.swift; sourceTree = "<group>"; };
 		A1816DF52658D68D00CABC50 /* ChargeTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeTimerViewController.swift; sourceTree = "<group>"; };
+		A1DA85F42664A7AC0072C448 /* ECarSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECarSearchViewController.swift; sourceTree = "<group>"; };
 		A1E72D5226539A420034FB95 /* E_Vehicle_TeamProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = E_Vehicle_TeamProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E72D5526539A420034FB95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1E72D5726539A420034FB95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +55,9 @@
 		A1E72D5E26539A460034FB95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1E72D6126539A460034FB95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1E72D6326539A460034FB95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D352785DE4530C5893A2B676 /* Pods-E_Vehicle_TeamProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Vehicle_TeamProject.debug.xcconfig"; path = "Target Support Files/Pods-E_Vehicle_TeamProject/Pods-E_Vehicle_TeamProject.debug.xcconfig"; sourceTree = "<group>"; };
+		DA66F5B87D4211D3CB799753 /* Pods_E_Vehicle_TeamProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_Vehicle_TeamProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E73EB521E27ED4C4EEFB45DF /* Pods-E_Vehicle_TeamProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E_Vehicle_TeamProject.release.xcconfig"; path = "Target Support Files/Pods-E_Vehicle_TeamProject/Pods-E_Vehicle_TeamProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +65,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC82E6F64F6CB33FAE6D6C0 /* Pods_E_Vehicle_TeamProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		445651DC2C2A065529ABAE5B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA66F5B87D4211D3CB799753 /* Pods_E_Vehicle_TeamProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A0C369580EFE240E48ADBE3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D352785DE4530C5893A2B676 /* Pods-E_Vehicle_TeamProject.debug.xcconfig */,
+				E73EB521E27ED4C4EEFB45DF /* Pods-E_Vehicle_TeamProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A1E72D4926539A420034FB95 = {
 			isa = PBXGroup;
 			children = (
 				A1E72D5426539A420034FB95 /* E_Vehicle_TeamProject */,
 				A1E72D5326539A420034FB95 /* Products */,
+				8A0C369580EFE240E48ADBE3 /* Pods */,
+				445651DC2C2A065529ABAE5B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +132,7 @@
 				A17F8B61265AB80A001AAA61 /* SubsidyViewController.swift */,
 				A17F8B64265ADF48001AAA61 /* SidoSubsidyTableViewCell.swift */,
 				A17F8B67265AE65F001AAA61 /* CarSubsidyViewController.swift */,
+				A1DA85F42664A7AC0072C448 /* ECarSearchViewController.swift */,
 			);
 			path = E_Vehicle_TeamProject;
 			sourceTree = "<group>";
@@ -116,9 +144,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1E72D6626539A460034FB95 /* Build configuration list for PBXNativeTarget "E_Vehicle_TeamProject" */;
 			buildPhases = (
+				1E8EBFFFBDB13F61C78DFF93 /* [CP] Check Pods Manifest.lock */,
 				A1E72D4E26539A420034FB95 /* Sources */,
 				A1E72D4F26539A420034FB95 /* Frameworks */,
 				A1E72D5026539A420034FB95 /* Resources */,
+				D4BDFD728BF9190973C531D6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -174,12 +204,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1E8EBFFFBDB13F61C78DFF93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-E_Vehicle_TeamProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4BDFD728BF9190973C531D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E_Vehicle_TeamProject/Pods-E_Vehicle_TeamProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-E_Vehicle_TeamProject/Pods-E_Vehicle_TeamProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-E_Vehicle_TeamProject/Pods-E_Vehicle_TeamProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1E72D4E26539A420034FB95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A17F8B492656EE42001AAA61 /* DetailStationViewController.swift in Sources */,
+				A1DA85F52664A7AD0072C448 /* ECarSearchViewController.swift in Sources */,
 				A17F8B372656D058001AAA61 /* ViewController_2.swift in Sources */,
 				A17F8B3B2656E17D001AAA61 /* AllMapViewController.swift in Sources */,
 				A17F8B2B2656BB64001AAA61 /* ChargingStationTableViewController.swift in Sources */,
@@ -339,6 +412,7 @@
 		};
 		A1E72D6726539A460034FB95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D352785DE4530C5893A2B676 /* Pods-E_Vehicle_TeamProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -358,6 +432,7 @@
 		};
 		A1E72D6826539A460034FB95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E73EB521E27ED4C4EEFB45DF /* Pods-E_Vehicle_TeamProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

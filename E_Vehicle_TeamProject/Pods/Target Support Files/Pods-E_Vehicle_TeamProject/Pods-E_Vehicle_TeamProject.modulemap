@@ -1,0 +1,6 @@
+framework module Pods_E_Vehicle_TeamProject {
+  umbrella header "Pods-E_Vehicle_TeamProject-umbrella.h"
+
+  export *
+  module * { export * }
+}
