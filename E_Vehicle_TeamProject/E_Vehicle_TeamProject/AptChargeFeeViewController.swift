@@ -13,7 +13,7 @@ class AptChargeFeeViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet var segmentControl: UISegmentedControl!
     @IBOutlet var tbData: UITableView!
     
-    var time = ["경부하시간대","중간부하시간대","최대부하시간대"]
+    var time = ["경부하 시간대","중간부하 시간대","최대부하 시간대"]
     var detailtime = ["23~09시", "09~10시, 12~13시, 17~23시", "10~12시, 13~17시"]
     var fee = ["182.27 원","227.15 원","255.75 원"]
     
