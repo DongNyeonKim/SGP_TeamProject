@@ -9,6 +9,10 @@ import UIKit
 import SwiftSoup
 
 class ECarSearchViewController: UIViewController {
+    
+    var sidoArray: [String] = []
+    
+    var carsArray: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,11 +36,14 @@ class ECarSearchViewController: UIViewController {
             let sidoTitles:Elements = try doc.select(".totalMap").select("dt") //.은 클래스
             
             let sidoCars:Elements = try doc.select(".totalMap").select("dd") //.은 클래스
+            
             for i in sidoTitles {
                 print("위치: ", try i.text())
+                sidoArray.append(try i.text())
             }
             for i in sidoCars {
                 print("가격: ", try i.text())
+                carsArray.append(try i.text())
             }
             
             
