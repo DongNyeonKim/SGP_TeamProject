@@ -12,6 +12,7 @@
 		A13238EB26681F1A00979A72 /* ECarIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13238EA26681F1A00979A72 /* ECarIntroViewController.swift */; };
 		A13238EE26683A0F00979A72 /* ECarIntroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13238ED26683A0F00979A72 /* ECarIntroDetailViewController.swift */; };
 		A13238F1266855F500979A72 /* ECarIntroDetailWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13238F0266855F500979A72 /* ECarIntroDetailWebViewController.swift */; };
+		A13239042669448500979A72 /* chargeintro.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A13239032669448500979A72 /* chargeintro.m4v */; };
 		A17F8B2B2656BB64001AAA61 /* ChargingStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B2A2656BB64001AAA61 /* ChargingStationTableViewController.swift */; };
 		A17F8B372656D058001AAA61 /* ViewController_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B362656D058001AAA61 /* ViewController_2.swift */; };
 		A17F8B3B2656E17D001AAA61 /* AllMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B3A2656E17D001AAA61 /* AllMapViewController.swift */; };
@@ -42,6 +43,7 @@
 		A13238EA26681F1A00979A72 /* ECarIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECarIntroViewController.swift; sourceTree = "<group>"; };
 		A13238ED26683A0F00979A72 /* ECarIntroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECarIntroDetailViewController.swift; sourceTree = "<group>"; };
 		A13238F0266855F500979A72 /* ECarIntroDetailWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECarIntroDetailWebViewController.swift; sourceTree = "<group>"; };
+		A13239032669448500979A72 /* chargeintro.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = chargeintro.m4v; sourceTree = "<group>"; };
 		A17F8B2A2656BB64001AAA61 /* ChargingStationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationTableViewController.swift; sourceTree = "<group>"; };
 		A17F8B362656D058001AAA61 /* ViewController_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_2.swift; sourceTree = "<group>"; };
 		A17F8B3A2656E17D001AAA61 /* AllMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMapViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				A17F8B61265AB80A001AAA61 /* SubsidyViewController.swift */,
 				A17F8B64265ADF48001AAA61 /* SidoSubsidyTableViewCell.swift */,
 				A17F8B67265AE65F001AAA61 /* CarSubsidyViewController.swift */,
+				A13239032669448500979A72 /* chargeintro.m4v */,
 				A1DA85F42664A7AC0072C448 /* ECarSearchViewController.swift */,
 				A1DA85FD266572FC0072C448 /* EcarNewsTableViewController.swift */,
 				A189D4A4266613DD002BE1FC /* ECarNewsTableViewCell.swift */,
@@ -215,6 +218,7 @@
 			files = (
 				A1E72D6226539A460034FB95 /* LaunchScreen.storyboard in Resources */,
 				A1E72D5F26539A460034FB95 /* Assets.xcassets in Resources */,
+				A13239042669448500979A72 /* chargeintro.m4v in Resources */,
 				A1E72D5D26539A420034FB95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

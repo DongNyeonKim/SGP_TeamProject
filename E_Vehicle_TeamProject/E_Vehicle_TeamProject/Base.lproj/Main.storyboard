@@ -284,7 +284,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ktI-Cm-yw2">
-                                <rect key="frame" x="16" y="108" width="358" height="659"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="650"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
@@ -298,7 +298,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YJj-Fq-82w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4906" y="-1263"/>
+            <point key="canvasLocation" x="4904.6153846153848" y="-1263.2701421800948"/>
         </scene>
         <!--충전 타이머-->
         <scene sceneID="522-U1-UVq">
@@ -843,7 +843,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DJS-5a-Kh2">
-                                <rect key="frame" x="16" y="108" width="358" height="659"/>
+                                <rect key="frame" x="0.0" y="88" width="390" height="650"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
@@ -857,7 +857,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gci-Cm-HPK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4938" y="80"/>
+            <point key="canvasLocation" x="4936.9230769230771" y="79.620853080568722"/>
         </scene>
         <!--Detail Stationwith Addr View Controller-->
         <scene sceneID="EHy-VQ-yoU">
@@ -1504,16 +1504,97 @@
             <objects>
                 <viewController id="Rrg-6L-lL5" customClass="ECarSearchViewController" customModule="E_Vehicle_TeamProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="74D-8I-8km">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGj-WV-yo6">
+                                <rect key="frame" x="0.0" y="88" width="390" height="1029"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ifj-XA-9wB">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="1200"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전기차 충전 방법" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuF-fS-4Up">
+                                                <rect key="frame" x="130" y="26" width="130" height="24"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8TY-vJ-JqF">
+                                                <rect key="frame" x="8" y="70" width="374" height="197"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJc-9V-Brg">
+                                                <rect key="frame" x="43" y="275" width="60" height="33"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <color key="tintColor" red="0.98431372549999996" green="0.52549019610000003" blue="0.054901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Play">
+                                                    <color key="titleColor" systemColor="systemIndigoColor"/>
+                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="touchPlayBut:" destination="Rrg-6L-lL5" eventType="touchUpInside" id="Ynf-uW-J5O"/>
+                                                </connections>
+                                            </button>
+                                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Vu0-pW-njU">
+                                                <rect key="frame" x="198" y="276" width="161" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="volumeChange:" destination="Rrg-6L-lL5" eventType="valueChanged" id="rBd-Qw-y5Z"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="볼륨:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eku-4U-beI">
+                                                <rect key="frame" x="142" y="274" width="60" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.91377085423872295" blue="0.59007573743741859" alpha="0.89803921568627454" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="PuF-fS-4Up" firstAttribute="top" secondItem="Ifj-XA-9wB" secondAttribute="top" constant="26" id="Ap8-ih-mJL"/>
+                                            <constraint firstItem="PuF-fS-4Up" firstAttribute="leading" secondItem="Ifj-XA-9wB" secondAttribute="leading" constant="130" id="MNd-nx-93z"/>
+                                            <constraint firstItem="BJc-9V-Brg" firstAttribute="top" secondItem="8TY-vJ-JqF" secondAttribute="bottom" constant="8" id="OiK-tO-XLT"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="BJc-9V-Brg" secondAttribute="bottom" constant="884" id="U0y-7h-QOH"/>
+                                            <constraint firstAttribute="trailing" secondItem="PuF-fS-4Up" secondAttribute="trailing" constant="130" id="YHc-7u-luW"/>
+                                            <constraint firstItem="8TY-vJ-JqF" firstAttribute="top" secondItem="PuF-fS-4Up" secondAttribute="bottom" constant="20" id="Z2f-jQ-MAa"/>
+                                            <constraint firstItem="BJc-9V-Brg" firstAttribute="leading" secondItem="Ifj-XA-9wB" secondAttribute="leadingMargin" constant="35" id="laP-eA-skc"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="BJc-9V-Brg" secondAttribute="trailing" constant="279" id="mIS-Tl-cMx"/>
+                                            <constraint firstAttribute="height" constant="1200" id="njb-Vc-DUm"/>
+                                            <constraint firstAttribute="trailing" secondItem="8TY-vJ-JqF" secondAttribute="trailing" constant="8" id="pNA-zG-LQ6"/>
+                                            <constraint firstItem="8TY-vJ-JqF" firstAttribute="leading" secondItem="Ifj-XA-9wB" secondAttribute="leading" constant="8" id="umm-Cf-wBR"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ifj-XA-9wB" secondAttribute="bottom" id="0km-UC-ugP"/>
+                                    <constraint firstItem="Ifj-XA-9wB" firstAttribute="leading" secondItem="aGj-WV-yo6" secondAttribute="leading" id="3Kj-N1-k0R"/>
+                                    <constraint firstItem="Ifj-XA-9wB" firstAttribute="top" secondItem="aGj-WV-yo6" secondAttribute="top" id="SNi-DN-W1i"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ifj-XA-9wB" secondAttribute="trailing" id="hXR-j4-eFd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="y2m-vQ-A5H"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aGj-WV-yo6" firstAttribute="top" secondItem="y2m-vQ-A5H" secondAttribute="top" id="2C9-q1-003"/>
+                            <constraint firstItem="aGj-WV-yo6" firstAttribute="leading" secondItem="y2m-vQ-A5H" secondAttribute="leading" id="Kls-2c-YQA"/>
+                            <constraint firstItem="Ifj-XA-9wB" firstAttribute="width" secondItem="74D-8I-8km" secondAttribute="width" id="YK8-Fw-a2Y"/>
+                            <constraint firstItem="aGj-WV-yo6" firstAttribute="bottom" secondItem="y2m-vQ-A5H" secondAttribute="bottom" id="eLf-HY-hnd"/>
+                            <constraint firstItem="aGj-WV-yo6" firstAttribute="trailing" secondItem="y2m-vQ-A5H" secondAttribute="trailing" id="vsi-Ko-OkG"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="Buy-pP-G7T"/>
+                    <size key="freeformSize" width="390" height="1200"/>
+                    <connections>
+                        <outlet property="avView" destination="8TY-vJ-JqF" id="CBV-24-waw"/>
+                        <outlet property="playButton" destination="BJc-9V-Brg" id="vq0-O4-VuG"/>
+                        <outlet property="volumeSlider" destination="Vu0-pW-njU" id="NeC-kQ-ZXb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZw-Hu-LRZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3391" y="4595"/>
+            <point key="canvasLocation" x="6661.538461538461" y="4623.6966824644551"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="CLq-eb-WkZ">
