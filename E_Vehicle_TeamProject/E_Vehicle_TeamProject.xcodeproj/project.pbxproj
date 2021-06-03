@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		3CC82E6F64F6CB33FAE6D6C0 /* Pods_E_Vehicle_TeamProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA66F5B87D4211D3CB799753 /* Pods_E_Vehicle_TeamProject.framework */; };
 		A13238E02666990900979A72 /* ECarNewsWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13238DF2666990900979A72 /* ECarNewsWebViewController.swift */; };
+		A13238EB26681F1A00979A72 /* ECarIntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13238EA26681F1A00979A72 /* ECarIntroViewController.swift */; };
+		A13238EE26683A0F00979A72 /* ECarIntroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13238ED26683A0F00979A72 /* ECarIntroDetailViewController.swift */; };
+		A13238F1266855F500979A72 /* ECarIntroDetailWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13238F0266855F500979A72 /* ECarIntroDetailWebViewController.swift */; };
 		A17F8B2B2656BB64001AAA61 /* ChargingStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B2A2656BB64001AAA61 /* ChargingStationTableViewController.swift */; };
 		A17F8B372656D058001AAA61 /* ViewController_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B362656D058001AAA61 /* ViewController_2.swift */; };
 		A17F8B3B2656E17D001AAA61 /* AllMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B3A2656E17D001AAA61 /* AllMapViewController.swift */; };
@@ -36,6 +39,9 @@
 
 /* Begin PBXFileReference section */
 		A13238DF2666990900979A72 /* ECarNewsWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECarNewsWebViewController.swift; sourceTree = "<group>"; };
+		A13238EA26681F1A00979A72 /* ECarIntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECarIntroViewController.swift; sourceTree = "<group>"; };
+		A13238ED26683A0F00979A72 /* ECarIntroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECarIntroDetailViewController.swift; sourceTree = "<group>"; };
+		A13238F0266855F500979A72 /* ECarIntroDetailWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECarIntroDetailWebViewController.swift; sourceTree = "<group>"; };
 		A17F8B2A2656BB64001AAA61 /* ChargingStationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationTableViewController.swift; sourceTree = "<group>"; };
 		A17F8B362656D058001AAA61 /* ViewController_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_2.swift; sourceTree = "<group>"; };
 		A17F8B3A2656E17D001AAA61 /* AllMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMapViewController.swift; sourceTree = "<group>"; };
@@ -141,6 +147,9 @@
 				A1DA85FD266572FC0072C448 /* EcarNewsTableViewController.swift */,
 				A189D4A4266613DD002BE1FC /* ECarNewsTableViewCell.swift */,
 				A13238DF2666990900979A72 /* ECarNewsWebViewController.swift */,
+				A13238EA26681F1A00979A72 /* ECarIntroViewController.swift */,
+				A13238ED26683A0F00979A72 /* ECarIntroDetailViewController.swift */,
+				A13238F0266855F500979A72 /* ECarIntroDetailWebViewController.swift */,
 			);
 			path = E_Vehicle_TeamProject;
 			sourceTree = "<group>";
@@ -259,10 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13238F1266855F500979A72 /* ECarIntroDetailWebViewController.swift in Sources */,
 				A17F8B492656EE42001AAA61 /* DetailStationViewController.swift in Sources */,
 				A1DA85F52664A7AD0072C448 /* ECarSearchViewController.swift in Sources */,
 				A17F8B372656D058001AAA61 /* ViewController_2.swift in Sources */,
 				A17F8B3B2656E17D001AAA61 /* AllMapViewController.swift in Sources */,
+				A13238EE26683A0F00979A72 /* ECarIntroDetailViewController.swift in Sources */,
 				A1DA85FE266572FC0072C448 /* EcarNewsTableViewController.swift in Sources */,
 				A189D4A5266613DD002BE1FC /* ECarNewsTableViewCell.swift in Sources */,
 				A17F8B2B2656BB64001AAA61 /* ChargingStationTableViewController.swift in Sources */,
@@ -277,6 +288,7 @@
 				A13238E02666990900979A72 /* ECarNewsWebViewController.swift in Sources */,
 				A1E72D5826539A420034FB95 /* SceneDelegate.swift in Sources */,
 				A17F8B68265AE65F001AAA61 /* CarSubsidyViewController.swift in Sources */,
+				A13238EB26681F1A00979A72 /* ECarIntroViewController.swift in Sources */,
 				A17F8B3E2656E441001AAA61 /* Station.swift in Sources */,
 				A17F8B65265ADF48001AAA61 /* SidoSubsidyTableViewCell.swift in Sources */,
 				A17F8B5526595492001AAA61 /* DetailStationwithAddrViewController.swift in Sources */,

@@ -38,12 +38,20 @@ class ECarSearchViewController: UIViewController {
             let sidoCars:Elements = try doc.select(".totalMap").select("dd") //.은 클래스
             
             for i in sidoTitles {
-                print("위치: ", try i.text())
+                //print("위치: ", try i.text())
                 sidoArray.append(try i.text())
             }
             for i in sidoCars {
-                print("가격: ", try i.text())
+                //print("가격: ", try i.text())
                 carsArray.append(try i.text())
+            }
+            
+            for i in sidoArray{
+                print(i)
+            }
+            
+            for i in carsArray{
+                print(i)
             }
             
             

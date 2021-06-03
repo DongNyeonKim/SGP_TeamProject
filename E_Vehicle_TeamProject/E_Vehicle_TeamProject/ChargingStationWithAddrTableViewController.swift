@@ -135,7 +135,7 @@ class ChargingStationWithAddrTableViewController: UITableViewController, XMLPars
         if segue.identifier == "segueToStationwithAddrDetail" {
             if let cell = sender as? UITableViewCell {
                 let indexPath = tableView.indexPath(for: cell)
-
+               
                 stationname = (posts.object(at: (indexPath?.row)!) as AnyObject).value(forKey: "csNm") as! NSString as String
 
                 if let detailstationwithAddrTableViewController = segue.destination as?
