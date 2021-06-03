@@ -5,6 +5,7 @@ target 'E_Vehicle_TeamProject' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'SwiftSoup'
+  pod 'Charts'
   # Pods for E_Vehicle_TeamProject
 
 end
