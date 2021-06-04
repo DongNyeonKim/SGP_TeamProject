@@ -362,6 +362,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Load.png" translatesAutoresizingMaskIntoConstraints="NO" id="LjK-zb-QjT">
+                                <rect key="frame" x="19" y="108" width="355" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Car.png" translatesAutoresizingMaskIntoConstraints="NO" id="JGc-SQ-iww" userLabel="Car">
+                                <rect key="frame" x="19" y="245" width="71" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sGA-QU-DRd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -375,8 +383,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="button" destination="8SM-ff-ixq" id="N1n-fe-Zv5"/>
+                        <outlet property="car" destination="JGc-SQ-iww" id="Fbc-Yr-760"/>
+                        <outlet property="load" destination="LjK-zb-QjT" id="098-Ot-4KW"/>
                         <outlet property="pickerView" destination="MPe-Mv-5vd" id="z3j-Ww-n7a"/>
                         <outlet property="predictingTime" destination="T0g-S1-3md" id="Rlg-gT-hFi"/>
+                        <outlet property="status" destination="Vcq-Um-Zfb" id="dYW-cp-Fdu"/>
                         <outlet property="timerLabel" destination="6ob-hU-Oht" id="UGV-rq-LDR"/>
                     </connections>
                 </viewController>
@@ -1699,6 +1710,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Car.png" width="666" height="255"/>
+        <image name="Load.png" width="543" height="195"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

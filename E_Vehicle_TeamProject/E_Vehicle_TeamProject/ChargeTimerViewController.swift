@@ -9,10 +9,13 @@ import UIKit
 
 class ChargeTimerViewController: UIViewController {
     
+    @IBOutlet weak var status: UILabel!
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var predictingTime: UILabel!
     @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var load: UIImageView!
+    @IBOutlet weak var car: UIImageView!
     
     var activeTimer: Bool = false
     var timer = Timer()
@@ -24,6 +27,7 @@ class ChargeTimerViewController: UIViewController {
     var hour:Int = 0
     var min:Int = 0
     var sec:Int = 0
+    var totalSec: Int = 0
     
     var saveHour: Int = 0
     var saveMin: Int = 0
@@ -32,8 +36,18 @@ class ChargeTimerViewController: UIViewController {
     @IBAction func StartButton() {
         if(!activeTimer){
             activeTimer = true
+            status.isHidden = true
+            car.isHidden = false
+            load.isHidden = false
             pickerView.isHidden = true
             timerLabel.isHidden = false
+            totalSec = hour*3600+min*60+sec
+            self.car.transform = CGAffineTransform(translationX: 0, y: 0)
+            
+            UIView.animate(withDuration: TimeInterval(totalSec + 1), animations: {
+                self.car.transform = CGAffineTransform(translationX: 285, y: 0)
+            })
+            
             if(!timer.isValid) {
                 timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.subtrackTime), userInfo: nil, repeats: true)
             }
@@ -65,7 +79,9 @@ class ChargeTimerViewController: UIViewController {
         hour = 0
         min = 0
         sec = 0
-        
+        status.isHidden = false
+        load.isHidden = true
+        car.isHidden = true
         var hstr = String(format: "%02d", hour)
         var mstr = String(format: "%02d", min)
         
@@ -109,7 +125,7 @@ class ChargeTimerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         pickerView.delegate = self
         setupTimer()
         // Do any additional setup after loading the view.

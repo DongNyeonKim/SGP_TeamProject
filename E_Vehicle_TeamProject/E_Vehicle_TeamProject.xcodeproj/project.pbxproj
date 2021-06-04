@@ -30,6 +30,8 @@
 		A189D4A5266613DD002BE1FC /* ECarNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A189D4A4266613DD002BE1FC /* ECarNewsTableViewCell.swift */; };
 		A1DA85F52664A7AD0072C448 /* ECarSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DA85F42664A7AC0072C448 /* ECarSearchViewController.swift */; };
 		A1DA85FE266572FC0072C448 /* EcarNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DA85FD266572FC0072C448 /* EcarNewsTableViewController.swift */; };
+		A1DEC0F5266A952B00A6F1AE /* Load.png in Resources */ = {isa = PBXBuildFile; fileRef = A1DEC0F3266A952B00A6F1AE /* Load.png */; };
+		A1DEC0FE266A9A1C00A6F1AE /* Car.png in Resources */ = {isa = PBXBuildFile; fileRef = A1DEC0FD266A9A1C00A6F1AE /* Car.png */; };
 		A1E72D5626539A420034FB95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E72D5526539A420034FB95 /* AppDelegate.swift */; };
 		A1E72D5826539A420034FB95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E72D5726539A420034FB95 /* SceneDelegate.swift */; };
 		A1E72D5A26539A420034FB95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E72D5926539A420034FB95 /* ViewController.swift */; };
@@ -61,6 +63,8 @@
 		A189D4A4266613DD002BE1FC /* ECarNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECarNewsTableViewCell.swift; sourceTree = "<group>"; };
 		A1DA85F42664A7AC0072C448 /* ECarSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECarSearchViewController.swift; sourceTree = "<group>"; };
 		A1DA85FD266572FC0072C448 /* EcarNewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcarNewsTableViewController.swift; sourceTree = "<group>"; };
+		A1DEC0F3266A952B00A6F1AE /* Load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Load.png; sourceTree = "<group>"; };
+		A1DEC0FD266A9A1C00A6F1AE /* Car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Car.png; sourceTree = "<group>"; };
 		A1E72D5226539A420034FB95 /* E_Vehicle_TeamProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = E_Vehicle_TeamProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E72D5526539A420034FB95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1E72D5726539A420034FB95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +107,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A1DEC0F2266A951500A6F1AE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A1DEC0FD266A9A1C00A6F1AE /* Car.png */,
+				A1DEC0F3266A952B00A6F1AE /* Load.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		A1E72D4926539A420034FB95 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +137,7 @@
 		A1E72D5426539A420034FB95 /* E_Vehicle_TeamProject */ = {
 			isa = PBXGroup;
 			children = (
+				A1DEC0F2266A951500A6F1AE /* Images */,
 				A1E72D5526539A420034FB95 /* AppDelegate.swift */,
 				A1E72D5726539A420034FB95 /* SceneDelegate.swift */,
 				A1E72D5926539A420034FB95 /* ViewController.swift */,
@@ -216,8 +230,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1DEC0FE266A9A1C00A6F1AE /* Car.png in Resources */,
 				A1E72D6226539A460034FB95 /* LaunchScreen.storyboard in Resources */,
 				A1E72D5F26539A460034FB95 /* Assets.xcassets in Resources */,
+				A1DEC0F5266A952B00A6F1AE /* Load.png in Resources */,
 				A13239042669448500979A72 /* chargeintro.m4v in Resources */,
 				A1E72D5D26539A420034FB95 /* Main.storyboard in Resources */,
 			);
