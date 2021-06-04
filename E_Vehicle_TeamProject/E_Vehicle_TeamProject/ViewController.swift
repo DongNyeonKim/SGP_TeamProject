@@ -8,6 +8,52 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var buttonDownScale : CGFloat = 0.8
+    
+    @IBOutlet weak var searchChargingStation: UIButton!
+    @IBOutlet weak var timer: UIButton!
+    @IBOutlet weak var price: UIButton!
+    @IBOutlet weak var subsidy: UIButton!
+    @IBOutlet weak var introduce: UIButton!
+    @IBOutlet weak var news: UIButton!
+    
+    @IBAction func FirstButtonDown(_ sender: Any) {
+        ButtonDown(button: searchChargingStation, buttonDown: true)
+    }
+    @IBAction func FirstButtonUp(_ sender: Any) {
+        ButtonDown(button: searchChargingStation, buttonDown: false)
+    }
+    @IBAction func SecondButtonDown(_ sender: Any) {
+        ButtonDown(button: timer, buttonDown: true)
+    }
+    @IBAction func SecondButtonUp(_ sender: Any) {
+        ButtonDown(button: timer, buttonDown: false)
+    }
+    @IBAction func ThirdButtonDown(_ sender: Any) {
+        ButtonDown(button: price, buttonDown: true)
+    }
+    @IBAction func ThirdButtonUp(_ sender: Any) {
+        ButtonDown(button: price, buttonDown: false)
+    }
+    @IBAction func FourthButtonDown(_ sender: Any) {
+        ButtonDown(button: subsidy, buttonDown: true)
+    }
+    @IBAction func FourthButtonUp(_ sender: Any) {
+        ButtonDown(button: subsidy, buttonDown: false)
+    }
+    @IBAction func FifthButtonDown(_ sender: Any) {
+        ButtonDown(button: introduce, buttonDown: true)
+    }
+    @IBAction func FifthButtonUp(_ sender: Any) {
+        ButtonDown(button: introduce, buttonDown: false)
+    }
+    @IBAction func SixthButtonDown(_ sender: Any) {
+        ButtonDown(button: news, buttonDown: true)
+    }
+    @IBAction func SixthButtonUp(_ sender: Any) {
+        ButtonDown(button: news, buttonDown: false)
+    }
+    
     
     @IBAction func doneToPickerViewController(segue:UIStoryboardSegue){
         
@@ -18,6 +64,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    func ButtonDown(button: UIButton, buttonDown: Bool) {
+        if(buttonDown) {
+            UIView.animate(withDuration: 0.25, animations: {
+                button.transform = CGAffineTransform(scaleX: self.buttonDownScale, y: self.buttonDownScale)
+            })
+        }
+        else {
+            UIView.animate(withDuration: 0.25, animations: {
+                button.transform = CGAffineTransform(scaleX: 1, y: 1)
+            })
+        }
+    }
 }
 

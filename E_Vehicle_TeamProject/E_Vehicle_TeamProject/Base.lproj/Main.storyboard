@@ -34,6 +34,8 @@
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="FifthButtonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="701-9R-uZ5"/>
+                                    <action selector="FifthButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oLM-Kw-eqG"/>
                                     <segue destination="lTc-lE-TOh" kind="show" id="jzs-RR-das"/>
                                 </connections>
                             </button>
@@ -46,6 +48,8 @@
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="SixthButtonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="nF5-1S-32e"/>
+                                    <action selector="SixthButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFy-0R-U8p"/>
                                     <segue destination="72A-SP-x2L" kind="show" id="4l0-Sh-lzv"/>
                                 </connections>
                             </button>
@@ -58,6 +62,8 @@
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="ThirdButtonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="IER-Mi-aEX"/>
+                                    <action selector="ThirdButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MOQ-i0-yo1"/>
                                     <segue destination="Odg-0x-ITh" kind="show" id="zKs-SV-t4O"/>
                                 </connections>
                             </button>
@@ -70,6 +76,8 @@
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="FourthButtonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="6Yj-H0-cUZ"/>
+                                    <action selector="FourthButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Riq-jJ-V41"/>
                                     <segue destination="E6a-XY-lYr" kind="show" id="NFh-s0-J5a"/>
                                 </connections>
                             </button>
@@ -82,6 +90,8 @@
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="FirstButtonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="cPE-Fj-J3x"/>
+                                    <action selector="FirstButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oKH-1S-bAl"/>
                                     <segue destination="0LT-9d-RjT" kind="show" id="a5Z-aJ-YfE"/>
                                 </connections>
                             </button>
@@ -94,6 +104,8 @@
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
+                                    <action selector="SecondButtonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="8dj-WK-DWp"/>
+                                    <action selector="SecondButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k2k-tZ-YzY"/>
                                     <segue destination="G6r-Ti-yQQ" kind="show" id="s3e-ec-Erh"/>
                                 </connections>
                             </button>
@@ -102,6 +114,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Yih-wG-Xhq"/>
+                    <connections>
+                        <outlet property="introduce" destination="1wz-aS-ssF" id="xmH-DV-Pfd"/>
+                        <outlet property="news" destination="wDd-oI-svb" id="pzg-7o-srA"/>
+                        <outlet property="price" destination="en1-RJ-n0A" id="JgE-vq-umL"/>
+                        <outlet property="searchChargingStation" destination="WwI-Wp-hf2" id="sGm-4W-muh"/>
+                        <outlet property="subsidy" destination="vMc-OJ-jUS" id="aig-p7-30Z"/>
+                        <outlet property="timer" destination="Lna-vF-T3E" id="lpC-gn-HwY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
