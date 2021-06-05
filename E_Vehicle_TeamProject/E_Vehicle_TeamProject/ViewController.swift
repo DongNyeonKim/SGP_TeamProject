@@ -58,7 +58,51 @@ class ViewController: UIViewController {
     @IBAction func doneToPickerViewController(segue:UIStoryboardSegue){
         
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with Event: UIEvent?) {
+        let touch = touches.first
+        let loc = touch!.location(in: self.view)
+        let startX: CGFloat = loc.x
+        let startY: CGFloat = loc.y
+        //let endY: CGFloat = ScreenHeight + 100
+        
+        let stars = StardustView(frame: CGRect(x: startX, y: startY, width: 10, height: 10))
+        self.view.addSubview(stars)
+        self.view.sendSubviewToBack(_: stars)
+        
+        UIView.animate(withDuration: 0.2,
+                        delay: 0.0,
+                        options: UIView.AnimationOptions.curveEaseOut,
+                        animations: {
+                        stars.center = CGPoint(x: startX, y: startY)
+                        },
+                        completion: {(value:Bool) in
+                        stars.removeFromSuperview()
+                        })
+    }
+    
+//    override func touchesMoved(_ touches: Set<UITouch>, with Event: UIEvent?) {
+//        let touch = touches.first
+//        let loc = touch!.location(in: self.view)
+//        let startX: CGFloat = loc.x
+//        let startY: CGFloat = loc.y
+//        //let endY: CGFloat = ScreenHeight + 100
+//        
+//        let stars = StardustView(frame: CGRect(x: startX, y: startY, width: 10, height: 10))
+//        self.view.addSubview(stars)
+//        self.view.sendSubviewToBack(_: stars)
+//        
+//        UIView.animate(withDuration: 0.2,
+//                        delay: 0.0,
+//                        options: UIView.AnimationOptions.curveEaseOut,
+//                        animations: {
+//                        stars.center = CGPoint(x: startX, y: startY)
+//                        },
+//                        completion: {(value:Bool) in
+//                        stars.removeFromSuperview()
+//                        })
+//    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

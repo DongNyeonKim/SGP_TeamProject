@@ -28,6 +28,8 @@
 		A17F8B68265AE65F001AAA61 /* CarSubsidyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B67265AE65F001AAA61 /* CarSubsidyViewController.swift */; };
 		A1816DF62658D68D00CABC50 /* ChargeTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1816DF52658D68D00CABC50 /* ChargeTimerViewController.swift */; };
 		A189D4A5266613DD002BE1FC /* ECarNewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A189D4A4266613DD002BE1FC /* ECarNewsTableViewCell.swift */; };
+		A1BD4485266BF3AB00349227 /* StardustView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BD4484266BF3AB00349227 /* StardustView.swift */; };
+		A1BD4488266BF3E500349227 /* particle.png in Resources */ = {isa = PBXBuildFile; fileRef = A1BD4487266BF3E500349227 /* particle.png */; };
 		A1DA85F52664A7AD0072C448 /* ECarSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DA85F42664A7AC0072C448 /* ECarSearchViewController.swift */; };
 		A1DA85FE266572FC0072C448 /* EcarNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DA85FD266572FC0072C448 /* EcarNewsTableViewController.swift */; };
 		A1DEC0F5266A952B00A6F1AE /* Load.png in Resources */ = {isa = PBXBuildFile; fileRef = A1DEC0F3266A952B00A6F1AE /* Load.png */; };
@@ -61,6 +63,8 @@
 		A17F8B67265AE65F001AAA61 /* CarSubsidyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSubsidyViewController.swift; sourceTree = "<group>"; };
 		A1816DF52658D68D00CABC50 /* ChargeTimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeTimerViewController.swift; sourceTree = "<group>"; };
 		A189D4A4266613DD002BE1FC /* ECarNewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECarNewsTableViewCell.swift; sourceTree = "<group>"; };
+		A1BD4484266BF3AB00349227 /* StardustView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StardustView.swift; sourceTree = "<group>"; };
+		A1BD4487266BF3E500349227 /* particle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle.png; sourceTree = "<group>"; };
 		A1DA85F42664A7AC0072C448 /* ECarSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECarSearchViewController.swift; sourceTree = "<group>"; };
 		A1DA85FD266572FC0072C448 /* EcarNewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcarNewsTableViewController.swift; sourceTree = "<group>"; };
 		A1DEC0F3266A952B00A6F1AE /* Load.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Load.png; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 		A1DEC0F2266A951500A6F1AE /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				A1BD4487266BF3E500349227 /* particle.png */,
 				A1DEC0FD266A9A1C00A6F1AE /* Car.png */,
 				A1DEC0F3266A952B00A6F1AE /* Load.png */,
 			);
@@ -167,6 +172,7 @@
 				A13238EA26681F1A00979A72 /* ECarIntroViewController.swift */,
 				A13238ED26683A0F00979A72 /* ECarIntroDetailViewController.swift */,
 				A13238F0266855F500979A72 /* ECarIntroDetailWebViewController.swift */,
+				A1BD4484266BF3AB00349227 /* StardustView.swift */,
 			);
 			path = E_Vehicle_TeamProject;
 			sourceTree = "<group>";
@@ -234,6 +240,7 @@
 				A1E72D6226539A460034FB95 /* LaunchScreen.storyboard in Resources */,
 				A1E72D5F26539A460034FB95 /* Assets.xcassets in Resources */,
 				A1DEC0F5266A952B00A6F1AE /* Load.png in Resources */,
+				A1BD4488266BF3E500349227 /* particle.png in Resources */,
 				A13239042669448500979A72 /* chargeintro.m4v in Resources */,
 				A1E72D5D26539A420034FB95 /* Main.storyboard in Resources */,
 			);
@@ -290,6 +297,7 @@
 			files = (
 				A13238F1266855F500979A72 /* ECarIntroDetailWebViewController.swift in Sources */,
 				A17F8B492656EE42001AAA61 /* DetailStationViewController.swift in Sources */,
+				A1BD4485266BF3AB00349227 /* StardustView.swift in Sources */,
 				A1DA85F52664A7AD0072C448 /* ECarSearchViewController.swift in Sources */,
 				A17F8B372656D058001AAA61 /* ViewController_2.swift in Sources */,
 				A17F8B3B2656E17D001AAA61 /* AllMapViewController.swift in Sources */,
