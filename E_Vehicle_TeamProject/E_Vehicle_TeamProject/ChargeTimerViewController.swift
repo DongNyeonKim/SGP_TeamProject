@@ -28,6 +28,7 @@ class ChargeTimerViewController: UIViewController {
     var min:Int = 0
     var sec:Int = 0
     var totalSec: Int = 0
+    var runningTime: Int = 0
     
     var saveHour: Int = 0
     var saveMin: Int = 0
@@ -41,22 +42,14 @@ class ChargeTimerViewController: UIViewController {
             load.isHidden = false
             pickerView.isHidden = true
             timerLabel.isHidden = false
+            runningTime = 0
             totalSec = hour*3600+min*60+sec
             self.car.transform = CGAffineTransform(translationX: 0, y: 0)
-            
-            UIView.animate(withDuration: TimeInterval(totalSec + 1), animations: {
-                self.car.transform = CGAffineTransform(translationX: 285, y: 0)
-            })
             
             if(!timer.isValid) {
                 timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.subtrackTime), userInfo: nil, repeats: true)
             }
             button.setTitle("리셋", for: .normal)
-            
-//            var formatter = DateFormatter()
-//            formatter.dateFormat = "HH:mm:ss"
-//            var current_date_string = formatter.string(from: Date())
-//            print(current_date_string)
             
             let date = Date()
             let date1 = Calendar.current.date(byAdding: .second, value: hour*3600+min*60+sec, to: date)
@@ -95,7 +88,7 @@ class ChargeTimerViewController: UIViewController {
     @objc func subtrackTime() {
         if(!(hour == 0 && min == 0 && sec == 0)){
             sec -= 1
-            
+            runningTime += 1
             if(sec == -1){
                 sec = 59
                 min -= 1
@@ -121,6 +114,7 @@ class ChargeTimerViewController: UIViewController {
                     
             present(alertController, animated: true, completion: nil)
         }
+        self.car.transform = CGAffineTransform(translationX: CGFloat(285 * runningTime / totalSec), y: 0)
     }
     
     override func viewDidLoad() {
