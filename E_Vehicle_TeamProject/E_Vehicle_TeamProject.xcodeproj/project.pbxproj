@@ -13,6 +13,21 @@
 		A13238EE26683A0F00979A72 /* ECarIntroDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13238ED26683A0F00979A72 /* ECarIntroDetailViewController.swift */; };
 		A13238F1266855F500979A72 /* ECarIntroDetailWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13238F0266855F500979A72 /* ECarIntroDetailWebViewController.swift */; };
 		A13239042669448500979A72 /* chargeintro.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A13239032669448500979A72 /* chargeintro.m4v */; };
+		A132392A266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-10.png in Resources */ = {isa = PBXBuildFile; fileRef = A132391B266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-10.png */; };
+		A132392B266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-2.png in Resources */ = {isa = PBXBuildFile; fileRef = A132391C266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-2.png */; };
+		A132392C266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-8.png in Resources */ = {isa = PBXBuildFile; fileRef = A132391D266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-8.png */; };
+		A132392D266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-4.png in Resources */ = {isa = PBXBuildFile; fileRef = A132391E266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-4.png */; };
+		A132392E266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-7.png in Resources */ = {isa = PBXBuildFile; fileRef = A132391F266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-7.png */; };
+		A132392F266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-6.png in Resources */ = {isa = PBXBuildFile; fileRef = A1323920266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-6.png */; };
+		A1323930266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-14.png in Resources */ = {isa = PBXBuildFile; fileRef = A1323921266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-14.png */; };
+		A1323931266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-15.png in Resources */ = {isa = PBXBuildFile; fileRef = A1323922266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-15.png */; };
+		A1323932266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-1.png in Resources */ = {isa = PBXBuildFile; fileRef = A1323923266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-1.png */; };
+		A1323933266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-11.png in Resources */ = {isa = PBXBuildFile; fileRef = A1323924266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-11.png */; };
+		A1323934266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-5.png in Resources */ = {isa = PBXBuildFile; fileRef = A1323925266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-5.png */; };
+		A1323935266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-13.png in Resources */ = {isa = PBXBuildFile; fileRef = A1323926266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-13.png */; };
+		A1323936266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-9.png in Resources */ = {isa = PBXBuildFile; fileRef = A1323927266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-9.png */; };
+		A1323937266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-3.png in Resources */ = {isa = PBXBuildFile; fileRef = A1323928266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-3.png */; };
+		A1323938266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-12.png in Resources */ = {isa = PBXBuildFile; fileRef = A1323929266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-12.png */; };
 		A17F8B2B2656BB64001AAA61 /* ChargingStationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B2A2656BB64001AAA61 /* ChargingStationTableViewController.swift */; };
 		A17F8B372656D058001AAA61 /* ViewController_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B362656D058001AAA61 /* ViewController_2.swift */; };
 		A17F8B3B2656E17D001AAA61 /* AllMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17F8B3A2656E17D001AAA61 /* AllMapViewController.swift */; };
@@ -48,6 +63,21 @@
 		A13238ED26683A0F00979A72 /* ECarIntroDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECarIntroDetailViewController.swift; sourceTree = "<group>"; };
 		A13238F0266855F500979A72 /* ECarIntroDetailWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ECarIntroDetailWebViewController.swift; sourceTree = "<group>"; };
 		A13239032669448500979A72 /* chargeintro.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = chargeintro.m4v; sourceTree = "<group>"; };
+		A132391B266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2021-06-07-03-48-38-10.png"; sourceTree = "<group>"; };
+		A132391C266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2021-06-07-03-48-38-2.png"; sourceTree = "<group>"; };
+		A132391D266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2021-06-07-03-48-38-8.png"; sourceTree = "<group>"; };
+		A132391E266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2021-06-07-03-48-38-4.png"; sourceTree = "<group>"; };
+		A132391F266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2021-06-07-03-48-38-7.png"; sourceTree = "<group>"; };
+		A1323920266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2021-06-07-03-48-38-6.png"; sourceTree = "<group>"; };
+		A1323921266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2021-06-07-03-48-38-14.png"; sourceTree = "<group>"; };
+		A1323922266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2021-06-07-03-48-38-15.png"; sourceTree = "<group>"; };
+		A1323923266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2021-06-07-03-48-38-1.png"; sourceTree = "<group>"; };
+		A1323924266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2021-06-07-03-48-38-11.png"; sourceTree = "<group>"; };
+		A1323925266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2021-06-07-03-48-38-5.png"; sourceTree = "<group>"; };
+		A1323926266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2021-06-07-03-48-38-13.png"; sourceTree = "<group>"; };
+		A1323927266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2021-06-07-03-48-38-9.png"; sourceTree = "<group>"; };
+		A1323928266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2021-06-07-03-48-38-3.png"; sourceTree = "<group>"; };
+		A1323929266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "KakaoTalk_Photo_2021-06-07-03-48-38-12.png"; sourceTree = "<group>"; };
 		A17F8B2A2656BB64001AAA61 /* ChargingStationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargingStationTableViewController.swift; sourceTree = "<group>"; };
 		A17F8B362656D058001AAA61 /* ViewController_2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_2.swift; sourceTree = "<group>"; };
 		A17F8B3A2656E17D001AAA61 /* AllMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMapViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +146,21 @@
 			children = (
 				A1BD4487266BF3E500349227 /* particle.png */,
 				A1DEC0FD266A9A1C00A6F1AE /* Car.png */,
+				A1323923266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-1.png */,
+				A132391C266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-2.png */,
+				A1323928266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-3.png */,
+				A132391E266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-4.png */,
+				A1323925266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-5.png */,
+				A1323920266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-6.png */,
+				A132391F266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-7.png */,
+				A132391D266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-8.png */,
+				A1323927266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-9.png */,
+				A132391B266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-10.png */,
+				A1323924266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-11.png */,
+				A1323929266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-12.png */,
+				A1323926266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-13.png */,
+				A1323921266D502F00979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-14.png */,
+				A1323922266D503000979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-15.png */,
 				A1DEC0F3266A952B00A6F1AE /* Load.png */,
 			);
 			path = Images;
@@ -237,12 +282,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1DEC0FE266A9A1C00A6F1AE /* Car.png in Resources */,
+				A1323935266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-13.png in Resources */,
+				A1323937266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-3.png in Resources */,
 				A1E72D6226539A460034FB95 /* LaunchScreen.storyboard in Resources */,
+				A1323932266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-1.png in Resources */,
 				A1E72D5F26539A460034FB95 /* Assets.xcassets in Resources */,
+				A132392A266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-10.png in Resources */,
 				A1DEC0F5266A952B00A6F1AE /* Load.png in Resources */,
+				A132392D266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-4.png in Resources */,
+				A132392F266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-6.png in Resources */,
+				A1323934266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-5.png in Resources */,
+				A1323938266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-12.png in Resources */,
+				A1323936266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-9.png in Resources */,
+				A1323930266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-14.png in Resources */,
 				A1BD4488266BF3E500349227 /* particle.png in Resources */,
 				A13239042669448500979A72 /* chargeintro.m4v in Resources */,
+				A132392E266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-7.png in Resources */,
+				A132392C266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-8.png in Resources */,
+				A1323933266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-11.png in Resources */,
+				A1323931266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-15.png in Resources */,
 				A1E72D5D26539A420034FB95 /* Main.storyboard in Resources */,
+				A132392B266D503100979A72 /* KakaoTalk_Photo_2021-06-07-03-48-38-2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
